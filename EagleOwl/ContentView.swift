@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var owlIsBreathing = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+//            EnvironmentView()
+            Button("Start") {
+                buttonAction()
+            }
+            OwlView(owlIsBreathing: owlIsBreathing)
+                .frame(width: 400, height: 400)
+                .padding(.top, 100)
         }
-        .padding()
+    }
+    
+    func buttonAction() {
+        withAnimation(
+            .easeInOut(duration: 1)
+            .repeatForever(autoreverses: true)
+            .delay(0.1)
+        ) {
+            owlIsBreathing.toggle()
+        }
     }
 }
 
