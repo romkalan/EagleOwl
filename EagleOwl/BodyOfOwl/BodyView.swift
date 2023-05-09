@@ -21,10 +21,11 @@ struct BodyView: View {
             
             //MARK: - Gray Color
             Path { path in
-                path.move(to: CGPoint(x: nearLine2, y: nearLine2))
-                path.addLine(to: CGPoint(x: nearLine2, y: farLine2))
-                path.addLine(to: CGPoint(x: farLine2, y: farLine2))
-                path.addLine(to: CGPoint(x: farLine2, y: nearLine2))
+                path.move(to: CGPoint(x: middle, y: nearLine2))
+                path.addQuadCurve(to: CGPoint(x: nearLine2, y: middle), control: CGPoint(x: nearLine2, y: nearLine2))
+                path.addQuadCurve(to: CGPoint(x: middle, y: farLine2), control: CGPoint(x: nearLine2, y: farLine2))
+                path.addQuadCurve(to: CGPoint(x: farLine2, y: middle), control: CGPoint(x: farLine2, y: farLine2))
+                path.addQuadCurve(to: CGPoint(x: middle, y: nearLine2), control: CGPoint(x: farLine2, y: nearLine2))
             }
             .fill(Color("grayOwl"))
             

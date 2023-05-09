@@ -24,6 +24,7 @@ struct TailView: View {
                 path.addLine(to: CGPoint(x: farLine, y: middle + nearLine))
             }
             .fill(Color(red: 0.7, green: 0.7, blue: 0.7))
+            
             Path { path in
                 path.move(to: CGPoint(x: middle, y: size))
                 path.addLine(to: CGPoint(x: middle, y: farLine))
