@@ -13,12 +13,11 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Image("фон")
-                .scaledToFill()
-                .padding(.bottom, 50)
+            EnvironmentView()
             OwlView(owlIsFlying: owlIsFlying, owlIsBlinking: owlIsBlinking)
-                .frame(width: 400, height: 400)
+                .frame(width: 450, height: 450)
                 .offset(x: 0, y: owlIsFlying ? 20 : 10)
+                .padding(.bottom, 50)
         }
         .onAppear {
             withAnimation(
