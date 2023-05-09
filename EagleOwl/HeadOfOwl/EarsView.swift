@@ -20,13 +20,13 @@ struct EarsView: View {
                 path.addLine(to: CGPoint(x: middle - size * 0.1, y: size * 0.22))
                 path.addLine(to: CGPoint(x: size * 0.23, y: size * 0.3))
             }
-            .fill(Color(red: 0.2, green: 0.2, blue: 0.2))
+            .fill(Color("darkGrayOwl"))
             Path { path in
                 path.move(to: CGPoint(x: size * 0.85, y: size * 0.15))
                 path.addLine(to: CGPoint(x: middle + size * 0.1, y: size * 0.22))
                 path.addLine(to: CGPoint(x: size * 0.77, y: size * 0.3))
             }
-            .fill(Color(red: 0.2, green: 0.2, blue: 0.2))
+            .fill(Color("darkGrayOwl"))
         }
     }
 }

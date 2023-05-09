@@ -21,7 +21,6 @@
 		AD5621962A08E1750094BF69 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5621952A08E1750094BF69 /* BodyView.swift */; };
 		AD5621982A08E2BE0094BF69 /* TailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5621972A08E2BE0094BF69 /* TailView.swift */; };
 		AD56219A2A08E33D0094BF69 /* WingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5621992A08E33D0094BF69 /* WingsView.swift */; };
-		AD5621A02A08F7640094BF69 /* EnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD56219F2A08F7640094BF69 /* EnvironmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +39,6 @@
 		AD5621952A08E1750094BF69 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
 		AD5621972A08E2BE0094BF69 /* TailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailView.swift; sourceTree = "<group>"; };
 		AD5621992A08E33D0094BF69 /* WingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WingsView.swift; sourceTree = "<group>"; };
-		AD56219F2A08F7640094BF69 /* EnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +74,6 @@
 				AD5621792A085AEF0094BF69 /* EagleOwlApp.swift */,
 				AD56217B2A085AEF0094BF69 /* ContentView.swift */,
 				AD5621872A08B6560094BF69 /* OwlView.swift */,
-				AD56219E2A08F74E0094BF69 /* Environment */,
 				AD56219D2A08E7D50094BF69 /* WingsOfOwl */,
 				AD56219B2A08E4DF0094BF69 /* BodyOfOwl */,
 				AD56219C2A08E50D0094BF69 /* HeadOfOwl */,
@@ -122,14 +119,6 @@
 				AD5621992A08E33D0094BF69 /* WingsView.swift */,
 			);
 			path = WingsOfOwl;
-			sourceTree = "<group>";
-		};
-		AD56219E2A08F74E0094BF69 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				AD56219F2A08F7640094BF69 /* EnvironmentView.swift */,
-			);
-			path = Environment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +195,6 @@
 				AD56219A2A08E33D0094BF69 /* WingsView.swift in Sources */,
 				AD5621942A08DD8B0094BF69 /* HeadView.swift in Sources */,
 				AD5621962A08E1750094BF69 /* BodyView.swift in Sources */,
-				AD5621A02A08F7640094BF69 /* EnvironmentView.swift in Sources */,
 				AD56217C2A085AEF0094BF69 /* ContentView.swift in Sources */,
 				AD5621982A08E2BE0094BF69 /* TailView.swift in Sources */,
 				AD5621902A08DCA30094BF69 /* EarsView.swift in Sources */,

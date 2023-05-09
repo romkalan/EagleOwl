@@ -18,7 +18,6 @@ struct TailView: View {
             let nearLine2 = size * 0.2
             let farLine = size * 0.8
             
-
             Path { path in
                 path.move(to: CGPoint(x: nearLine2, y: middle + nearLine))
                 path.addLine(to: CGPoint(x: middle, y: size))
@@ -30,13 +29,13 @@ struct TailView: View {
                 path.addLine(to: CGPoint(x: middle, y: farLine))
                 path.addLine(to: CGPoint(x: middle + size * 0.05, y: size - size * 0.07))
             }
-            .fill(Color(red: 0.2, green: 0.2, blue: 0.2))
+            .fill(Color("darkGrayOwl"))
             Path { path in
                 path.move(to: CGPoint(x: middle, y: size))
                 path.addLine(to: CGPoint(x: middle, y: farLine))
                 path.addLine(to: CGPoint(x: middle - size * 0.05, y: size - size * 0.07))
             }
-            .fill(Color(red: 0.2, green: 0.2, blue: 0.2))
+            .fill(Color("darkGrayOwl"))
         }
     }
 }
@@ -44,6 +43,6 @@ struct TailView: View {
 struct TailView_Previews: PreviewProvider {
     static var previews: some View {
         TailView()
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
     }
 }

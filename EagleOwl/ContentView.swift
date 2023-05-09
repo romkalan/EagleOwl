@@ -8,27 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var owlIsBreathing = false
+    @State private var owlIsFlying = false
+    @State private var owlIsBlinking = false
     
     var body: some View {
-        VStack {
-//            EnvironmentView()
-            Button("Start") {
-                buttonAction()
-            }
-            OwlView(owlIsBreathing: owlIsBreathing)
+        ZStack {
+            Image("фон")
+                .scaledToFill()
+                .padding(.bottom, 50)
+            OwlView(owlIsFlying: owlIsFlying, owlIsBlinking: owlIsBlinking)
                 .frame(width: 400, height: 400)
-                .padding(.top, 100)
+                .offset(x: 0, y: owlIsFlying ? 20 : 10)
         }
-    }
-    
-    func buttonAction() {
-        withAnimation(
-            .easeInOut(duration: 1)
-            .repeatForever(autoreverses: true)
-            .delay(0.1)
-        ) {
-            owlIsBreathing.toggle()
+        .onAppear {
+            withAnimation(
+                .easeInOut(duration: 1)
+                .repeatForever(autoreverses: true)
+                .delay(0.1)
+            ) {
+                owlIsFlying.toggle()
+            }
+            withAnimation(
+                .easeInOut(duration: 2)
+                .repeatForever(autoreverses: true)
+                .delay(5)
+            ) {
+                owlIsBlinking.toggle()
+            }
         }
     }
 }

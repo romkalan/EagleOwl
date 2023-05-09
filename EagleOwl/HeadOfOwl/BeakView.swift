@@ -35,6 +35,6 @@ struct BeakView: View {
 struct BeakView_Previews: PreviewProvider {
     static var previews: some View {
         BeakView()
-            .frame(width: 500, height: 500)
+            .frame(width: 400, height: 400)
     }
 }

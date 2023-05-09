@@ -8,20 +8,23 @@
 import SwiftUI
 
 struct HeadView: View {
+    var owlIsFlying: Bool
+    var owlIsBlinking: Bool
+    
     var body: some View {
-        GeometryReader { _ in
-            EyesView()
+        GeometryReader { geometry in
+            EyesView(owlIsBlinking: owlIsBlinking)
             EarsView()
             ForeheadView()
             BeakView()
-            MonocleView()
+            MonocleView(owlIsFlying: owlIsFlying)
         }
     }
 }
 
 struct HeadView_Previews: PreviewProvider {
     static var previews: some View {
-        HeadView()
+        HeadView(owlIsFlying: false, owlIsBlinking: false)
             .frame(width: 400, height: 400)
     }
 }
