@@ -10,9 +10,7 @@ import SwiftUI
 struct EnvironmentView: View {
     var body: some View {
         ZStack {
-            Color.orange
-                .ignoresSafeArea()
-                .opacity(0.33)
+            Color.orange.ignoresSafeArea().opacity(0.33)
             ForestView()
         }
     }
