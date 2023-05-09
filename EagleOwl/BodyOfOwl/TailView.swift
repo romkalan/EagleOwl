@@ -28,13 +28,19 @@ struct TailView: View {
             Path { path in
                 path.move(to: CGPoint(x: middle, y: size))
                 path.addLine(to: CGPoint(x: middle, y: farLine))
-                path.addLine(to: CGPoint(x: middle + size * 0.05, y: size - size * 0.07))
+                path.addLine(to: CGPoint(
+                    x: middle + size * 0.05,
+                    y: size - size * 0.07)
+                )
             }
             .fill(Color("darkGrayOwl"))
             Path { path in
                 path.move(to: CGPoint(x: middle, y: size))
                 path.addLine(to: CGPoint(x: middle, y: farLine))
-                path.addLine(to: CGPoint(x: middle - size * 0.05, y: size - size * 0.07))
+                path.addLine(to: CGPoint(
+                    x: middle - size * 0.05,
+                    y: size - size * 0.07)
+                )
             }
             .fill(Color("darkGrayOwl"))
         }

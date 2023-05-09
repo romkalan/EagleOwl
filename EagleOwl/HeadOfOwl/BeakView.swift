@@ -19,13 +19,19 @@ struct BeakView: View {
             Path { path in
                 path.move(to: CGPoint(x: middle, y: middle))
                 path.addLine(to: CGPoint(x: middle, y: middle - size * 0.15))
-                path.addLine(to: CGPoint(x: middle + size * 0.05, y: middle - nearLine))
+                path.addLine(to: CGPoint(
+                    x: middle + size * 0.05,
+                    y: middle - nearLine)
+                )
             }
             .fill(Color(red: 1, green: 0.8, blue: 0))
             Path { path in
                 path.move(to: CGPoint(x: middle, y: middle))
                 path.addLine(to: CGPoint(x: middle, y: middle - size * 0.15))
-                path.addLine(to: CGPoint(x: middle - size * 0.05, y: middle - nearLine))
+                path.addLine(to: CGPoint(
+                    x: middle - size * 0.05,
+                    y: middle - nearLine)
+                )
             }
             .fill(Color(red: 1, green: 0.7, blue: 0))
         }

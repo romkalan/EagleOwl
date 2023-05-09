@@ -26,27 +26,66 @@ struct ForestView: View {
             
             //MARK: - Trees
             Path { path in
-                path.move(to: CGPoint(x: minNearLine, y: maxSize + minNearLine2))
-                path.addLine(to: CGPoint(x: minMiddle - minNearLine, y: maxMiddle - maxNearLine))
-                path.addLine(to: CGPoint(x: minFarLine2, y: maxSize + minNearLine2))
+                path.move(to: CGPoint(
+                    x: minNearLine,
+                    y: maxSize + minNearLine2
+                ))
+                path.addLine(to: CGPoint(
+                    x: minMiddle - minNearLine,
+                    y: maxMiddle - maxNearLine
+                ))
+                path.addLine(to: CGPoint(
+                    x: minFarLine2,
+                    y: maxSize + minNearLine2
+                ))
             }
             .fill(Color("darkGreen"))
+            
             Path { path in
-                path.move(to: CGPoint(x: minFarLine2, y: maxSize + minNearLine2))
-                path.addLine(to: CGPoint(x: minFarLine, y: maxMiddle - maxNearLine))
-                path.addLine(to: CGPoint(x: minSize + minNearLine, y: maxSize + minNearLine2))
+                path.move(to: CGPoint(
+                    x: minFarLine2,
+                    y: maxSize + minNearLine2
+                ))
+                path.addLine(to: CGPoint(
+                    x: minFarLine,
+                    y: maxMiddle - maxNearLine
+                ))
+                path.addLine(to: CGPoint(
+                    x: minSize + minNearLine,
+                    y: maxSize + minNearLine2
+                ))
             }
             .fill(Color("darkGreen"))
+            
             Path { path in
-                path.move(to: CGPoint(x: -minNearLine2, y: maxSize + maxNearLine2))
-                path.addLine(to: CGPoint(x: minNearLine, y: maxMiddle - maxNearLine))
-                path.addLine(to: CGPoint(x: minMiddle - minNearLine, y: maxSize + maxNearLine2))
+                path.move(to: CGPoint(
+                    x: -minNearLine2,
+                    y: maxSize + maxNearLine2
+                ))
+                path.addLine(to: CGPoint(
+                    x: minNearLine,
+                    y: maxMiddle - maxNearLine
+                ))
+                path.addLine(to: CGPoint(
+                    x: minMiddle - minNearLine,
+                    y: maxSize + maxNearLine2
+                ))
             }
             .fill(Color("lightGreen"))
+            
             Path { path in
-                path.move(to: CGPoint(x: minMiddle, y: maxSize + maxNearLine2))
-                path.addLine(to: CGPoint(x: minFarLine2, y: maxMiddle - maxNearLine))
-                path.addLine(to: CGPoint(x: minSize, y: maxSize + maxNearLine2))
+                path.move(to: CGPoint(
+                    x: minMiddle,
+                    y: maxSize + maxNearLine2
+                ))
+                path.addLine(to: CGPoint(
+                    x: minFarLine2,
+                    y: maxMiddle - maxNearLine
+                ))
+                path.addLine(to: CGPoint(
+                    x: minSize,
+                    y: maxSize + maxNearLine2
+                ))
             }
             .fill(Color("lightGreen"))
             
