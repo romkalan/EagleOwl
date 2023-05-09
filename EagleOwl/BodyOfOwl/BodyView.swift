@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BodyView: View {
-    
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
@@ -20,6 +19,7 @@ struct BodyView: View {
             let farLine = size * 0.9
             let farLine2 = size * 0.8
             
+            //MARK: - Gray Color
             Path { path in
                 path.move(to: CGPoint(x: nearLine2, y: nearLine2))
                 path.addLine(to: CGPoint(x: nearLine2, y: farLine2))
@@ -38,6 +38,8 @@ struct BodyView: View {
                 path.addLine(to: CGPoint(x: farLine2, y: middle))
             }
             .fill(Color("grayOwl"))
+            
+            //MARK: - White Color
             Path { path in
                 path.move(to: CGPoint(x: nearLine2, y: middle))
                 path.addLine(to: CGPoint(x: middle, y: middle - nearLine))
